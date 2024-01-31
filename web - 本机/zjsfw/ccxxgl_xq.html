@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/ccxxgl_xq.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./ccxxgl_sc.html">上传菜场信息</a></p></li>
+            <li class="nav"><p><a href="./ccxxgl_bg_many.html">维护菜场信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">中间商服务>菜场信息管理>菜场信息详情</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div class="row1">
+                <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr>
+                        <td>菜场编号</td>
+                        <td id="ccid"></td>
+                        <td>用户账号</td>
+                        <td id="yhid"></td>
+                      </tr>
+                      <tr>
+                        <td>菜池个数</td>
+                        <td id="ccgs"></td>
+                        <td>容纳规模</td>
+                        <td id="rngm"></td>
+                      </tr>
+                      <tr>
+                        <td>菜池地址</td>
+                        <td colspan="3" id="ccdz"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="imgs">
+                <ul>
+                    <li><img src="" id="img1"></li>
+                    <li><img src="" id="img2"></li>
+                    <li><img src="" id="img3"></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button class="b back" onclick="back()">返回</button>
+            </div>
+        </div>
+
+        <div class="footer">@copyright</div>
+    </div>
+    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/ccxxgl_xq.js"></script>
+</body>
+</html>

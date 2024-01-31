@@ -1,0 +1,42 @@
+.right .operate {
+  padding-top: 3vh;
+  padding-left: 10%;
+}
+.right .operate .row {
+  width: 90%;
+}
+.right .operate .row .l {
+  width: 45%;
+  float: left;
+  margin-right: 10%;
+}
+.right .operate .row .r {
+  width: 45%;
+  float: left;
+}
+.right .operate .row .l2 {
+  width: 100%;
+  float: left;
+}
+.right .operate .btns {
+  width: 90%;
+  height: 25vh;
+}
+.right .operate .btns .btn_sc {
+  width: 20%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-top: 2vh;
+  border-radius: 2vw;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.right .operate .btns .back {
+  width: 20%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-top: 2vh;
+  border-radius: 2vw;
+}

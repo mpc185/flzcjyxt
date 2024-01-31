@@ -1,0 +1,43 @@
+.right .operate {
+  padding-top: 3vh;
+  padding-left: 10%;
+}
+.right .operate .row1 {
+  width: 90%;
+  height: 25vh;
+  text-align: center;
+}
+.right .operate .imgs {
+  width: 90%;
+  height: 30vh;
+}
+.right .operate .imgs ul {
+  width: 100%;
+  height: 30vh;
+  padding: 0;
+  margin: 0;
+}
+.right .operate .imgs ul li {
+  width: 30%;
+  height: 28vh;
+  float: left;
+  background-color: blueviolet;
+  margin-left: 2.5%;
+}
+.right .operate .imgs ul li img {
+  width: 100%;
+  height: 100%;
+}
+.right .operate .btns {
+  width: 90%;
+  height: 10vh;
+}
+.right .operate .btns .b {
+  width: 20%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-left: 40%;
+  margin-top: 1vh;
+  border-radius: 2vw;
+}

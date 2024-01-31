@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/about_help.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./about.html">关于</a></p></li>
+            <li class="nav"><p><a href="./help.html">帮助</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">关于帮助>关于</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <p>
+                <b>系统介绍：</b> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本系统致力于提供榨菜从种植到加工全过程的交易信息，主要服务对象为菜农、中间商和加工厂商。主要解决了每年的交易过程中，信息不透明导致的交易延后性，以及监控和规范整个交易过程。同时，根据每年的交易数据，可以看出每年的种植情况与价格走向，从而推断出本年度的种植情况与收菜价格。
+                <br>
+                <b>功能：</b> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;菜农：种植信息管理&nbsp;&nbsp;查看中间商信息<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;中间商：菜场信息管理&nbsp;&nbsp;收菜信息管理&nbsp;&nbsp;查看菜农信息&nbsp;&nbsp;查看加工厂信息<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;加工厂：加工厂信息管理&nbsp;&nbsp;收菜信息管理<br>
+            </p>
+        </div>
+        <div class="footer">@copyright</div>
+    </div>
+    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        function backIndex(){
+            window.location.href="../xtsy/index.html"
+        }
+    </script>
+</body>
+</html>

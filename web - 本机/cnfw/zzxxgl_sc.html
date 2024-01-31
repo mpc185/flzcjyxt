@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/zzxxgl_sc.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./zzxxgl_sc.html">上传种植信息</a></p></li>
+            <li class="nav"><p><a href="./zzxxgl_cx.html">维护种植信息</a></p></li>
+            <li class="nav"><p><a href="./zzxxgl_ck.html">查看种植信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">菜农服务>种植信息管理>上传种植信息</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div class="row">
+                <div class="l">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">种植年度：</span>
+                        <select class="form-select" id="zznd" name="sellist1">
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">种植时间：</span>
+                          <input type="date" class="form-control" id="zzsj">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="l">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">种植规模：</span>
+                          <input type="text" class="form-control" placeholder="单位：亩" id="zzgm">
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">收菜时间：</span>
+                          <input type="date" class="form-control" id="scsj">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group input-group-lg mb-4">
+                    <span class="input-group-text">种植地址：</span>
+                  <input type="text" class="form-control" placeholder="种植地址" id="zzdz">
+                </div>
+            </div>
+            <div class="btns">
+                <button class="btn_sc" onclick="sc()">上传</button>
+            </div>
+        </div>
+        <div class="footer">@copyright</div>
+    </div>
+
+
+    <script src="./js/zzxxgl_sc.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

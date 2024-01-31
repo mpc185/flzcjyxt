@@ -1,0 +1,19 @@
+.right .operate #tip {
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  line-height: 40vh;
+  font-size: 5vw;
+}
+.right .operate .btn {
+  width: 100%;
+  height: 30vh;
+}
+.right .operate .btn .back {
+  width: 20%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-top: 8vh;
+  border-radius: 2vw;
+}

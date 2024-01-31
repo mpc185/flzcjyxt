@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.head {
+  width: 100vw;
+  height: 15vh;
+  background-color: #538135;
+  text-align: center;
+  font-size: 5vw;
+  line-height: 15vh;
+  color: white;
+  letter-spacing: 2vw;
+}
+.left {
+  width: 18vw;
+  height: 85vh;
+  float: left;
+  background-color: #c5e0b3;
+  text-align: center;
+}
+.left .navs {
+  width: 100%;
+  height: 50%;
+  padding: 0;
+}
+.left .navs .nav {
+  width: 100%;
+  height: 8vh;
+  float: left;
+  background-color: #A8D08D;
+  border: 1px solid gainsboro;
+}
+.left .navs .nav:first-child {
+  border-top: none;
+}
+.left .navs .nav:last-child {
+  border-bottom: none;
+}
+.left .navs .nav p {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 8vh;
+  font-size: 1.2vw;
+}
+.left .navs .nav p a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.left .navs .nav .title {
+  font-size: 1.6vw;
+}
+.left .logo {
+  width: 14vw;
+  height: 14vw;
+  background-color: #538135;
+  margin-left: 2vw;
+  border-radius: 50%;
+}
+.left .logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.right {
+  width: 81.5vw;
+  height: 85vh;
+  float: right;
+}
+.right .little_head {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(231, 231, 231, 0.5);
+}
+.right .little_head .localtion {
+  width: 60%;
+  height: 7vh;
+  float: left;
+}
+.right .little_head .localtion .tip {
+  width: 15%;
+  height: 7vh;
+  float: left;
+  line-height: 7vh;
+  padding-left: 1%;
+  text-align: left;
+  font-size: 1.2vw;
+}
+.right .little_head .localtion .localtionValue {
+  width: 85%;
+  height: 7vh;
+  line-height: 7vh;
+  font-size: 1.2vw;
+}
+.right .little_head .btns {
+  width: 35%;
+  height: 7vh;
+  float: left;
+}
+.right .little_head .btns #enroll {
+  width: 30%;
+  height: 5vh;
+  margin-top: 1vh;
+  margin-left: 70%;
+  border: none;
+  border-radius: 2vw;
+  background-color: #538135;
+  font-size: 1.1vw;
+}
+.right .operate {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
+  background-color: rgba(231, 231, 231, 0.5);
+}
+.right .footer {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(231, 231, 231, 0.5);
+  padding-right: 5%;
+  text-align: right;
+  font-size: 1.2vw;
+  color: #535353;
+  line-height: 7vh;
+}

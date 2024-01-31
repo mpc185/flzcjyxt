@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/scxxgl_cx.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./ckcnxx_bg.html">菜农用户信息</a></p></li>
+            <li class="nav"><p><a href="./ckcnxx_cxzzxx.html">菜农种植信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">中间商服务>查看菜农信息>查询种植信息</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div class="row1">
+                <div class="input-group input-group-lg mb-4">
+                    <span class="input-group-text">菜农姓名：</span>
+                      <input type="text" class="form-control" id="yhzsxm">
+                </div>
+            </div>
+            <div class="btns">
+                <button class="btn_cx" onclick="cx()">查询</button>
+            </div>
+        </div>
+
+        <div class="footer">@copyright</div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/ckcnxx_cxzzxx.js"></script>
+</body>
+</html>

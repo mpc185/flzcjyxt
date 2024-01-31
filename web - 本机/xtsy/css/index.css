@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.head {
+  width: 100vw;
+  height: 15vh;
+  background-color: #538135;
+  text-align: center;
+  font-size: 5vw;
+  line-height: 15vh;
+  color: white;
+  letter-spacing: 2vw;
+}
+.nav {
+  width: 100vw;
+  height: 8vh;
+  background-color: rgba(245, 245, 245, 0.5);
+  font-size: 1.3vw;
+}
+.nav .navs {
+  list-style: none;
+  width: 80%;
+  height: 100%;
+}
+.nav .navs .dropdown {
+  width: 12%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 8vh;
+}
+.nav .navs .dropdown .tag {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.nav .nav_btns {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+.nav .nav_btns #login {
+  width: 30%;
+  height: 60%;
+  margin-top: 1.5vh;
+  margin-right: 10%;
+  border: none;
+  border-radius: 2vw;
+  background-color: #538135;
+}
+.nav .nav_btns #enroll {
+  width: 30%;
+  height: 60%;
+  margin-top: 1.5vh;
+  border: none;
+  border-radius: 2vw;
+  background-color: #538135;
+}
+.contents {
+  width: 100%;
+  height: 70vh;
+}
+.contents .content {
+  width: 32%;
+  height: 68vh;
+  float: left;
+  background-color: rgba(231, 231, 231, 0.5);
+  margin-top: 1vh;
+  margin-left: 1%;
+  border: 1px solid rgba(231, 231, 231, 0.5);
+  border-radius: 1vw;
+  padding: 1vh;
+}
+.contents .content .text {
+  width: 100%;
+  height: 65vh;
+  overflow-y: auto;
+  font-size: 1vw;
+}
+.contents .content .text a {
+  color: #000;
+  text-decoration: none;
+}
+.contents .content .text a:hover {
+  color: #538135;
+}
+.contents .content .text::-webkit-scrollbar {
+  width: 0.6524vw;
+}
+.contents .content .text::-webkit-scrollbar-thumb {
+  background: #e7e7e7;
+  border-radius: 1vh;
+}
+.contents .content #products {
+  padding: 1vh;
+}
+.contents .content #products li {
+  list-style: none;
+  width: 100%;
+  height: 20vh;
+}
+.contents .content #products li .imgs {
+  width: 30%;
+  height: 18vh;
+  float: left;
+}
+.contents .content #products li .imgs img {
+  width: 100%;
+  height: 100%;
+}
+.contents .content #products li .work {
+  width: 68%;
+  height: 18vh;
+  float: right;
+  padding: 0.5vh;
+}
+.footer {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(231, 231, 231, 0.5);
+  text-align: right;
+  padding-right: 5%;
+  font-size: 1.2vw;
+  color: #535353;
+  line-height: 7vh;
+}

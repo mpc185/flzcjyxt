@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/scxxgl_xq.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./scxxgl_sc.html">上传收菜信息</a></p></li>
+            <li class="nav"><p><a href="./scxxgl_cx.html">维护收菜信息</a></p></li>
+            <li class="nav"><p><a href="./scxxgl_ckcx.html">查看收菜信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">加工厂服务>收菜信息管理>收菜信息详情</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div class="row1">
+                <table class="table table-striped table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>收菜编号</td>
+                            <td id="yzcscid"></td>
+                            <td>用户账号</td>
+                            <td id="yhid"></td>
+                          </tr>
+                          <tr>
+                            <td>收菜年度</td>
+                            <td id="yzcscnd"></td>
+                            <td>收菜时间</td>
+                            <td id="yzcscsj"></td>
+                          </tr>
+                          <tr>
+                            <td>收菜报价</td>
+                            <td colspan="3" id="yzcscbj"></td>
+                          </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="btns">
+                <button class="b back" onclick="back()">返回</button>
+            </div>
+        </div>
+
+        <div class="footer">@copyright</div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/scxxgl_xq.js"></script>
+</body>
+</html>

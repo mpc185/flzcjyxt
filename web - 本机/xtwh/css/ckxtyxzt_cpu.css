@@ -1,0 +1,28 @@
+.right .operate {
+  padding-top: 10vh;
+  padding-left: 10%;
+}
+.right .operate .row {
+  width: 90%;
+  height: 64vh;
+  overflow-y: auto;
+}
+.right .operate .row .bg {
+  width: 100%;
+  text-align: center;
+}
+.right .operate .row .bg table .b {
+  width: 90%;
+  height: 4vh;
+  border: none;
+  background-color: #538135;
+  border-radius: 2vw;
+  font-size: 1vw;
+}
+.right .operate .row::-webkit-scrollbar {
+  width: 0.6524vw;
+}
+.right .operate .row::-webkit-scrollbar-thumb {
+  background: #e7e7e7;
+  border-radius: 1vh;
+}

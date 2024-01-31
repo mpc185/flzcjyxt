@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<!--系统首页-->
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="nav">
+        <ul class="navs">
+            <li class="dropdown">
+                <a class="tag" href="#">系统首页</a>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                    <a class="tag" href="#">菜农服务</a>
+                </div>
+                <ul class="dropdown-menu">
+                  <li onclick="zzxxgl()"><a class="dropdown-item" href="#">种植信息管理</a></li>
+                  <li onclick="ckzzsxx()"><a class="dropdown-item" href="#">查看中间商信息</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                    <a class="tag" href="#">中间商服务</a>
+                </div>
+                <ul class="dropdown-menu">
+                  <li onclick="ccxxgl()"><a class="dropdown-item" href="#">菜场信息管理</a></li>
+                  <li onclick="scscxxgl()"><a class="dropdown-item" href="#">收菜信息管理</a></li>
+                  <li onclick="ckcnxx()"><a class="dropdown-item" href="#">查看菜农信息</a></li>
+                  <li onclick="ckjgcxx()"><a class="dropdown-item" href="#">查看加工厂信息</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                    <a class="tag" href="#">加工厂服务</a>
+                </div>
+                <ul class="dropdown-menu">
+                  <li onclick="jgcxxgl()"><a class="dropdown-item" href="#">加工厂信息管理</a></li>
+                  <li onclick="yzcscxxgl()"><a class="dropdown-item" href="#">收菜信息管理</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" onclick="yhxxgl()">
+                <a class="tag" href="#">个人中心</a>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                    <a class="tag" href="#">系统维护</a>
+                </div>
+                <ul class="dropdown-menu">
+                    <li onclick="xtyxzt()"><a class="dropdown-item" href="#">查看系统运行状态</a></li>
+                    <li onclick="sjbf()"><a class="dropdown-item" href="#">数据备份</a></li>
+                    <li onclick="glyhxx()"><a class="dropdown-item" href="#">管理用户信息</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                    <a class="tag" href="#">关于帮助</a>
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../help/about.html">关于</a></li>
+                  <li><a class="dropdown-item" href="../help/help.html">帮助</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav_btns">
+            <button id="login" onclick="login()">登录</button>
+            <button id="enroll" onclick="enroll()">注册</button>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content" id="history">
+            <p class="text">
+                <a href="https://baike.baidu.com/item/%E6%B6%AA%E9%99%B5%E6%A6%A8%E8%8F%9C/4182471"><b style="font-size: 1.3vw;">涪陵榨菜（fú líng zhà cài）</b></a>  
+                 重庆市<a href="https://baike.baidu.com/item/%E6%B6%AA%E9%99%B5%E5%8C%BA">涪陵区</a>涪陵区特产<br>
+                 <a href="https://baike.baidu.com/item/%E5%9C%B0%E7%90%86%E6%A0%87%E5%BF%97%E4%BF%9D%E6%8A%A4%E4%BA%A7%E5%93%81">中国国家地理标志产品</a><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;涪陵榨菜选用涪陵特有的青菜头，经独特的加工工艺制成的鲜嫩香脆的风味产品。与法国酸黄瓜、德国甜酸甘蓝并称世界三大名腌菜，
+                也是中国对外出口的三大名菜（榨菜、薇菜、竹笋）之一。其传统制作技艺被列入第二批国家级非物质文化遗产名录。
+                <img src="./img/img1.jpg" style="width: 80%;height: 30vh;margin-left: 10%;margin-right: 10%;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1899年，邱寿安专设作坊加工，扩大生产，并按其加工工艺过程将其命名为“榨菜”（意即“经盐腌榨制过的咸菜”）。“榨菜”一词从此诞生，这是“涪陵榨菜”之名的起源。
+                涪陵榨菜从诞生至清宣统元年（1909年）的10余年间，一直为邱家独家生产经营，直到宣统二年（1910年），其生产工艺才被泄漏并迅速传开，后逐渐形成一大行业，历久不衰。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1931年，涪陵的榨菜加工厂（户）已达100余家。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1940年，涪陵榨菜产量首次突破20万担，其销售市场已形成以上海、武汉为中心辐射南北，并以转销形式出口至香港、南洋群岛等地。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1949年后，随着市场发展的需要和人们对榨菜的喜爱，涪陵榨菜得到了较快发展，生产规模、销售市场日益扩大，影响与日俱增。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1953年，涪陵榨菜被国家纳入二类物资管理，由中商部直接计划调拨，成为定量供应各省、市、自治区以及军需、出口的主要商品。<br>
+                <img src="./img/img2.jpg" style="width: 80%;height: 30vh;margin-left: 10%;margin-right: 10%;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1959年和1978年，中商部、全国供销合作总社先后两次在涪陵举办全国青菜头种植、榨菜加工培训班，并从涪陵抽派技术人员到全国各地指导生产，大力发展。从此，榨菜逐渐传到中国各省、市、自治区一些地方。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1995年3月，涪陵被国家命名为“中国榨菜之乡”；<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2003年，涪陵被国家授予“全国果蔬十强区（市、县）”和“全国农产品深加工十强区（市、县）”；<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2005年，“涪陵榨菜”通过国家质检总局原产地域产品保护审定。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2008年6月，“榨菜传统制作技艺·涪陵榨菜传统制作技艺”被国务院列为“国家级非物质文化遗产”保护名录；<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013年，“涪陵榨菜”被中国农产品区域公用品牌价值评估课题组评估认定其品牌价值为125.32亿元。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年，“涪陵榨菜”被中国农产品区域公用品牌价值评估课题组评估认定其品牌价值为132.93亿元。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017年，“涪陵榨菜”荣获“2017年中国百强农产品区域公用品牌”称号。 <br>
+            </p>
+        </div>
+        <div class="content" id="news">
+            <p class="text" style="font-size: 1.3vw;line-height: 4vh;">
+                <b style="font-size: 1.5vw;color: #538135;">最新相关信息</b><br>
+                <br>
+              
+                <a href="https://www.jiemian.com/article/9391468.html"><b style="color: #538135;">涪陵榨菜：</b>2023年主要工作是品牌焕新及新品铺市上市</a>
+                <br><br>
+             
+                <a href="https://stock.stockstar.com/RB2023051200008854.shtml"><b style="color: #538135;">涪陵榨菜：</b>5月11日融资净买入1324.35万元，连续3日累计净买入2757.81万元</a>
+                <br>
+                <br>
+                <a href="https://finance.ifeng.com/c/8PjCLI28Haa"><b style="color: #538135;">涪陵榨菜：</b>酱类市场空间广阔 公司目前以做大增量为目标</a>
+                <br>
+                <br>
+                <a href="https://new.qq.com/rain/a/20230504A085QB00">V观财报｜涪陵榨菜：泡菜、萝卜产品毛利率已超40％，仍有较大提升空间</a>
+                <br>
+                <br>
+                <a href="https://www.163.com/dy/article/I4Q2SK3Q0514R9KQ.html">云南省通报11批次食品抽检不合格，涉<b style="color: #538135;">涪陵榨菜</b></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="text" id="products">
+                <li>
+                    <div class="imgs"><img src="./img/p1.jpg" alt=""></div>
+                    <div class="work">
+                        <a href="">乌江脆口榨菜箱中箱120g×16包咸菜酱菜下饭菜早餐配粥1.92kg*1箱</a>
+                        <br><br>
+                        <b style="margin-top: 2vh;color: rgb(232, 47, 47);font-size: 1.5vw;">￥49.90</b>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgs"><img src="./img/p2.jpg" alt=""></div>
+                    <div class="work">
+                        <a href="">涪陵榨菜丝真芯下饭菜口口脆咸菜陪陵培林杂菜小包装整箱商用批发</a>
+                        <br><br>
+                        <b style="margin-top: 2vh;color: rgb(232, 47, 47);font-size: 1.5vw;">￥29.80</b>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgs"><img src="./img/p3.jpg" alt=""></div>
+                    <div class="work">
+                        <a href="">涪陵榨菜丝真芯下饭菜口口脆咸菜陪陵培林杂菜小包装整箱商用批发</a>
+                        <br><br>
+                        <b style="margin-top: 2vh;color: rgb(232, 47, 47);font-size: 1.5vw;">￥99.88</b>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgs"><img src="./img/p4.jpg" alt=""></div>
+                    <div class="work">
+                        <a href="">乌江脆口榨菜箱中箱120g×16包咸菜酱菜下饭菜早餐配粥1.92kg*1箱</a>
+                        <br><br>
+                        <b style="margin-top: 2vh;color: rgb(232, 47, 47);font-size: 1.5vw;">￥69.88</b>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="footer">@copyright</div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

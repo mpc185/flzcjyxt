@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/jgcxxgl_xq.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./jgcxxgl_sc.html">上传加工厂信息</a></p></li>
+            <li class="nav"><p><a href="./jgcxxgl_bg.html">维护加工厂信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">加工厂服务>加工厂信息管理>加工厂信息详情</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div class="row1">
+                <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr>
+                        <td>加工厂编号</td>
+                        <td id="jgcid"></td>
+                        <td>用户账号</td>
+                        <td id="yhid"></td>
+                      </tr>
+                      <tr>
+                        <td>加工厂名称</td>
+                        <td id="jgcmc"></td>
+                        <td>加工厂地址</td>
+                        <td id="jgcdz"></td>
+                      </tr>
+                      <tr>
+                        <td>简介</td>
+                        <td colspan="3" id="jgcjj"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="btns">
+                <button class="b back" onclick="back()">返回</button>
+            </div>
+        </div>
+
+        <div class="footer">@copyright</div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jgcxxgl_xq.js"></script>
+</body>
+</html>

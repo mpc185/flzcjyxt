@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/login_basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/tip1.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="middle">
+        <div class="left">
+            <img src="./img/logo.png">
+        </div>
+        <div class="right">
+            <!-- 在这个位置写代码 -->
+            <div id="tip"></div>
+            <div class="btn">
+                <button class="back" onclick="back()">返回</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">@copyright</div>
+
+    <script>
+        var tip =window.sessionStorage.getItem("tip")
+        document.getElementById("tip").innerHTML=tip
+        function back(){
+            window.location.href=window.sessionStorage.getItem("location")
+        }
+    </script>
+</body>
+</html>

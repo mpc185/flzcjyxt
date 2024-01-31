@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/ccxxgl_sc.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./ccxxgl_sc.html">上传菜场信息</a></p></li>
+            <li class="nav"><p><a href="./ccxxgl_bg_many.html">维护菜场信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue">中间商服务>菜场信息管理>上传菜场信息</div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div class="row">
+                <div class="l">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">菜池个数：</span>
+                          <input type="text" class="form-control" id="ccgs">
+                    </div>
+                </div>
+                <div class="r">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">容纳规模：</span>
+                          <input type="text" class="form-control" id="rngm" placeholder="单位：吨">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="l2">
+                    <div class="input-group input-group-lg mb-4">
+                        <span class="input-group-text">菜场地址：</span>
+                          <input type="text" class="form-control" id="ccdz">
+                    </div>
+                </div>
+            </div>
+            <div class="imgs">
+                <ul>
+                    <li>
+                        <img src="./img/sctp.jpg" id="img1">
+                        <input type="file" id="ipt1">
+                    </li>
+                    <li>
+                        <img src="./img/sctp.jpg" id="img2">
+                        <input type="file" id="ipt2">
+                    </li>
+                    <li>
+                        <img src="./img/sctp.jpg" id="img3">
+                        <input type="file" id="ipt3">
+                    </li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button class="b back" onclick="sc()">上传</button>
+            </div>
+        </div>
+        <div class="footer">@copyright</div>
+    </div>
+    
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/ccxxgl_sc.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.middle .right .row1 {
+  width: 100%;
+}
+.middle .right .row1 .name {
+  width: 45%;
+  float: left;
+  margin-right: 10%;
+}
+.middle .right .row1 .type {
+  width: 45%;
+  float: left;
+}
+.middle .right .btns {
+  width: 100%;
+  height: 15vh;
+}
+.middle .right .btns .enroll {
+  width: 25%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-top: 4vh;
+  border-radius: 2vw;
+  margin-left: 15%;
+  margin-right: 20%;
+}
+.middle .right .btns .back {
+  width: 25%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-top: 4vh;
+  border-radius: 2vw;
+}

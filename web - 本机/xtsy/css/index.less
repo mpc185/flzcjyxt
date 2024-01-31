@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    width: 100vw;
+    height: 15vh;
+    background-color: #538135;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 15vh;
+    color: white;
+    letter-spacing:2vw;
+}
+.nav{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(245, 245, 245, 0.5);
+    font-size: 1.3vw;
+    .navs{
+        list-style: none;
+        width: 80%;
+        height: 100%;
+        .dropdown{
+            width: 12%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            line-height: 8vh;
+            .tag{
+                text-decoration: none;
+                color: rgb(29, 29, 29);
+            }
+        }
+    }
+    .nav_btns{
+        width: 20%;
+        height: 100%;
+        float: right;
+        #login{
+            width: 30%;
+            height: 60%;
+            margin-top: 1.5vh;
+            margin-right: 10%;
+            border: none;
+            border-radius: 2vw;
+            background-color: #538135;
+        }
+        #enroll{
+            width: 30%;
+            height: 60%;
+            margin-top: 1.5vh;
+            border: none;
+            border-radius: 2vw;
+            background-color: #538135;
+        }
+    }
+}
+.contents{
+    width: 100%;
+    height: 70vh;
+    .content{
+        width: 32%;
+        height: 68vh;
+        float: left;
+        background-color: rgba(231, 231, 231, 0.5);
+        margin-top: 1vh;
+        margin-left: 1%;
+        border: 1px solid rgba(231, 231, 231, 0.5);
+        border-radius: 1vw;
+        padding: 1vh;
+        .text{
+            width: 100%;
+            height: 65vh;
+            overflow-y: auto;
+            font-size: 1vw;
+            a{
+                color: #000;
+                text-decoration: none;
+                &:hover{
+                    
+                    color: #538135;
+                }
+            }
+        }
+        .text::-webkit-scrollbar{
+            width: 0.6524vw;
+        }
+        .text::-webkit-scrollbar-thumb{
+            background: #e7e7e7;
+            border-radius: 1vh;
+        }
+        #products{
+            padding: 1vh;
+            li{
+                list-style: none;
+                width: 100%;
+                height: 20vh;
+                .imgs{
+                    width: 30%;
+                    height: 18vh;
+                    float: left;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .work{
+                    width: 68%;
+                    height: 18vh;
+                    float: right;
+                    padding: .5vh;
+                }
+                
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(231, 231, 231, 0.5);
+    text-align: right;
+    padding-right: 5%;
+    font-size: 1.2vw;
+    color: rgb(83, 83, 83);
+    line-height: 7vh;
+}

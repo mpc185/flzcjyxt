@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榨菜交易管理系统</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/tip2.css">
+</head>
+<body>
+    <div class="head">榨菜交易管理系统</div>
+    <div class="left">
+        <ul class="navs">
+            <li class="nav">
+                <p class="title"><b>导航</b> </p>
+            </li>
+            <li class="nav"><p><a href="./ckxtyxzt_cpu.html">服务器与CUP信息</a></p></li>
+            <li class="nav"><p><a href="./ckxtyhzt_nc.html">内存信息</a></p></li>
+            <li class="nav"><p><a href="./ckxtyxzt_java.html">JAVA虚拟机信息</a></p></li>
+        </ul>
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="right">
+        <div class="little_head">
+            <div class="localtion">
+                <div class="tip">当前位置：</div>
+                <div class="localtionValue" id="locationTip"></div>
+            </div>
+            <div class="btns">
+                <button id="enroll" onclick="backIndex()">返回首页</button>
+            </div>
+        </div>
+        <div class="operate">
+            <!-- 在这里敲代码 -->
+            <div id="tip"></div>
+            <div class="btn">
+                <button class="back" onclick="back()">返回</button>
+            </div>
+        </div>
+        <div class="footer">@copyright</div>
+    </div>
+    
+    <script>
+        var tip =window.sessionStorage.getItem("tip")
+        var locationTip = window.sessionStorage.getItem("locationTip")
+        document.getElementById("tip").innerHTML=tip
+        document.getElementById("locationTip").innerHTML=locationTip
+        function back(){
+            window.location.href=window.sessionStorage.getItem("location")
+        }
+        function backIndex(){
+            window.location.href="../xtsy/index.html"
+        }
+    </script>
+</body>
+</html>

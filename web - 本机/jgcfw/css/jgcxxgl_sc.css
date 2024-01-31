@@ -1,0 +1,21 @@
+.right .operate {
+  padding-top: 3vh;
+  padding-left: 10%;
+}
+.right .operate .row {
+  width: 50%;
+  margin-left: 20%;
+}
+.right .operate .btns {
+  width: 90%;
+  height: 10vh;
+}
+.right .operate .btns .b {
+  width: 20%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-left: 40%;
+  margin-top: 1vh;
+  border-radius: 2vw;
+}

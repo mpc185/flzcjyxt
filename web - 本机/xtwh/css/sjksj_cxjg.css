@@ -1,0 +1,43 @@
+.right .operate {
+  padding-top: 3vh;
+  padding-left: 10%;
+}
+.right .operate .row {
+  width: 90%;
+  height: 64vh;
+}
+.right .operate .row .bg {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  overflow-y: auto;
+}
+.right .operate .row .bg table .b {
+  width: 90%;
+  height: 4vh;
+  border: none;
+  background-color: #538135;
+  border-radius: 2vw;
+  font-size: 1vw;
+}
+.right .operate .row .btns {
+  width: 90%;
+  height: 10vh;
+  margin-top: 2vh;
+}
+.right .operate .row .btns .b {
+  width: 20%;
+  height: 8vh;
+  border: none;
+  background-color: #538135;
+  margin-left: 40%;
+  margin-top: 1vh;
+  border-radius: 2vw;
+}
+.right .operate .bg::-webkit-scrollbar {
+  width: 0.6524vw;
+}
+.right .operate .bg::-webkit-scrollbar-thumb {
+  background: #e7e7e7;
+  border-radius: 1vh;
+}
